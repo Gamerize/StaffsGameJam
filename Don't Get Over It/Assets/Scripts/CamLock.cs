@@ -27,8 +27,17 @@ public class CamLock : MonoBehaviour
     {
         X = player.transform.position.x;
         Y = player.transform.position.y;
-    
-        transform.position = new Vector3(X, Y, -10);
-   
+        if (Y < -3)
+        {
+            transform.position = new Vector3(X, -3, -10);
+        }
+        if (X<0)
+        {
+            transform.position = new Vector3(0, Y, -10);
+        }
+        else
+        {
+            transform.position = new Vector3(X, Y, -10);
+        }
     }
 }
