@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class EventManager : MonoBehaviour
 {
     public GameObject PauseButtons;
-    public GameObject Inventory;
     public bool paused = false;
     // Start is called before the first frame update
     void Start()
