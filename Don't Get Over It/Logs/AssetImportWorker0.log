@@ -15,11 +15,11 @@ C:/Users/w018802k/Documents/GitHub/StaffsGameJam/Don't Get Over It
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64905
-Successfully changed project path to: C:/Users/w018802k/Documents/GitHub/StaffsGameJam/Don't Get Over It
-C:/Users/w018802k/Documents/GitHub/StaffsGameJam/Don't Get Over It
+53322
+Successfully changed project path to: C:/Users/s012349l/Documents/GitHub/StaffsGameJam/Don't Get Over It
+C:/Users/s012349l/Documents/GitHub/StaffsGameJam/Don't Get Over It
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 76.87 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 69.61 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.17f1 (03b40fe07a36)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,94 +35,94 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001111 seconds.
+Registered in 0.001162 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 84.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 68.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.815 seconds
+- Completed reload, in  0.772 seconds
 Domain Reload Profiling:
-	ReloadAssembly (815ms)
-		BeginReloadAssembly (40ms)
+	ReloadAssembly (772ms)
+		BeginReloadAssembly (41ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (358ms)
-			LoadAssemblies (39ms)
+		EndReloadAssembly (326ms)
+			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (111ms)
+			SetupTypeCache (107ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (190ms)
+			SetupLoadedEditorAssemblies (167ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
+				RefreshPlugins (69ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (76ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003048 seconds.
+Registered in 0.003258 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\w018802k\Documents\GitHub\StaffsGameJam\Don't Get Over It\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\w018802k\Documents\GitHub\StaffsGameJam\Don't Get Over It\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 102.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 68.60 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.084 seconds
+- Completed reload, in  0.865 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1084ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (865ms)
+		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (939ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (729ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
+			SetupTypeCache (218ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (458ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (356ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (258ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3683 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3682 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 136.6 MB.
 System memory in use after: 136.8 MB.
 
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4133.
-Total: 3.325100 ms (FindLiveObjects: 0.336700 ms CreateObjectMapping: 0.176900 ms MarkObjects: 2.711600 ms  DeleteObjects: 0.098400 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 4134.
+Total: 2.780300 ms (FindLiveObjects: 0.196000 ms CreateObjectMapping: 0.089200 ms MarkObjects: 2.471100 ms  DeleteObjects: 0.023300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,67 +136,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Audio/Dialogue/talk 1.mp3
-  artifactKey: Guid(2ccf7fe5eb3b14540b29709090d0f894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 1.mp3 using Guid(2ccf7fe5eb3b14540b29709090d0f894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d9cf9ef57b50b9d4534608e482d156') in 0.063925 seconds 
+  path: Assets/Scenes
+  artifactKey: Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffae677c86e903bacef8065336249a81') in 0.008801 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Audio/Dialogue/talk 8.mp3
-  artifactKey: Guid(3e7a11557457ff843ae32352016f80f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 8.mp3 using Guid(3e7a11557457ff843ae32352016f80f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4666d9fc2f6676c761517c942e992069') in 0.008608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Audio/Dialogue/talk 2.mp3
-  artifactKey: Guid(e16ece00caad49f4384611bcd2039408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 2.mp3 using Guid(e16ece00caad49f4384611bcd2039408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1cea5011b68e528b6f718b1eb7f0b19') in 0.008142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Audio/Dialogue/talk last.mp3
-  artifactKey: Guid(f6246bf093d97da498680110d029bcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk last.mp3 using Guid(f6246bf093d97da498680110d029bcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f54e997abfd853d980af9c0f942103e') in 0.005828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Audio/Dialogue/talk 5.mp3
-  artifactKey: Guid(582cfa23f5133654187bad03ab94f70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 5.mp3 using Guid(582cfa23f5133654187bad03ab94f70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b8e55c6e8d5549627fa13ae27c12d2e') in 0.006673 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Audio/Dialogue/talk 7.mp3
-  artifactKey: Guid(1b0b7e97f33d4714a90965861d74d359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 7.mp3 using Guid(1b0b7e97f33d4714a90965861d74d359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91da16b0e6126becd1a928ad482764b') in 0.008532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/Audio/Dialogue/talk 4.mp3
-  artifactKey: Guid(39be15aec83186440a8e4bd8e077ab9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 4.mp3 using Guid(39be15aec83186440a8e4bd8e077ab9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ded7736de7134135d30b450b8856e9e') in 0.006581 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Audio/Dialogue/talk 6.mp3
-  artifactKey: Guid(6893487201e62ac448d6f6ef8b83c785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 6.mp3 using Guid(6893487201e62ac448d6f6ef8b83c785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc4131daaeff67909c203172b7448df') in 0.006762 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Audio/Dialogue/talk 9.mp3
-  artifactKey: Guid(7e6ecfa86e7e560409583f099546d135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 9.mp3 using Guid(7e6ecfa86e7e560409583f099546d135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d076c377aa4d0218e5cb55e26329482') in 0.007886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Audio/Dialogue/talk 3.mp3
-  artifactKey: Guid(965bfc6ae213ece44ae029a923605f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Dialogue/talk 3.mp3 using Guid(965bfc6ae213ece44ae029a923605f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f891ed8299289e6146633f13d8214f6') in 0.005205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3914.134187 seconds.
-  path: Assets/Audio/Music
-  artifactKey: Guid(f886d7a480776c9468ceac4e4621f26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music using Guid(f886d7a480776c9468ceac4e4621f26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938ce89653f70d153e18f8b40082c25e') in 0.005740 seconds 
+  Time since last request: 7.324896 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(683262c1e4c8ed341a9827d83e7aa0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(683262c1e4c8ed341a9827d83e7aa0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5e3578fd4c93a93f8f8a49103ad0e68') in 0.013129 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
