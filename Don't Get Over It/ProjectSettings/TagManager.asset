@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Point
+  - Tool
   layers:
   - Default
   - TransparentFX
