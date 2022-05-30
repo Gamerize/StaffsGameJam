@@ -495,8 +495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262533771}
   - component: {fileID: 262533770}
-  - component: {fileID: 262533775}
-  - component: {fileID: 262533774}
+  - component: {fileID: 262533772}
   - component: {fileID: 262533773}
   m_Layer: 0
   m_Name: Hoe
@@ -556,7 +555,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &262533771
 Transform:
   m_ObjectHideFlags: 0
@@ -565,12 +564,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262533769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.918, z: 0}
+  m_LocalPosition: {x: 0, y: -1.4, z: 0}
   m_LocalScale: {x: 0.31818032, y: 1.8838291, z: 1}
   m_Children: []
   m_Father: {fileID: 1692962521}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262533772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262533769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293ce44e1f5ed864688803e3c1c4c212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 1692962522}
+  isGrounded: 0
+  Anim: {fileID: 0}
+  Player: {fileID: 262533771}
+  scale: 0
+  X: 0
+  Y: 0
+  Rdirection: 0
+  Ldirection: 0
+  flipped: 0
+  var: 0
+  player: {fileID: 262533769}
+  rotation_point: {fileID: 1014305219}
 --- !u!61 &262533773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -597,49 +621,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &262533774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262533769}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4876f87fcb3113419addef660fceabb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PauseButtons: {fileID: 0}
-  Inventory: {fileID: 0}
-  paused: 0
---- !u!114 &262533775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262533769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 293ce44e1f5ed864688803e3c1c4c212, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  jumpForce: 100
-  xVelocity: 8
-  RB: {fileID: 0}
-  isGrounded: 0
-  lastHitWall: 0
-  Anim: {fileID: 0}
-  Player: {fileID: 262533771}
-  scale: 0
-  X: 0
-  Y: 0
-  Rdirection: 0
-  Ldirection: 0
-  flipped: 0
-  var: 0
-  player: {fileID: 262533769}
 --- !u!1 &283473612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2184,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1014305219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014305220}
+  m_Layer: 0
+  m_Name: Rotation Point
+  m_TagString: Point
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1014305220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014305219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0042380095, z: 0}
+  m_LocalScale: {x: 0.31818032, y: 1.8838291, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1692962521}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181318398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,8 +2625,9 @@ GameObject:
   - component: {fileID: 1692962521}
   - component: {fileID: 1692962520}
   - component: {fileID: 1692962523}
-  - component: {fileID: 1692962522}
+  - component: {fileID: 1692962525}
   - component: {fileID: 1692962524}
+  - component: {fileID: 1692962522}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2683,10 +2695,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692962519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.14, y: 1.02, z: 0}
+  m_LocalPosition: {x: -4.14, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 262533771}
+  - {fileID: 1014305220}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2749,12 +2762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293ce44e1f5ed864688803e3c1c4c212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  jumpForce: 0
-  xVelocity: 0
-  RB: {fileID: 1692962522}
+  RB: {fileID: 0}
   isGrounded: 0
-  lastHitWall: 0
   Anim: {fileID: 0}
   Player: {fileID: 1692962521}
   scale: 0
@@ -2765,6 +2774,22 @@ MonoBehaviour:
   flipped: 0
   var: 0
   player: {fileID: 1692962519}
+  rotation_point: {fileID: 1014305219}
+--- !u!114 &1692962525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692962519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4876f87fcb3113419addef660fceabb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseButtons: {fileID: 0}
+  Inventory: {fileID: 0}
+  paused: 0
 --- !u!1 &1737897195
 GameObject:
   m_ObjectHideFlags: 0

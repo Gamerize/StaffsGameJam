@@ -5,12 +5,8 @@ using UnityEngine;
 
 public class CollisionMotion : MonoBehaviour
 {
-    public float speed;
-    public float jumpForce;
-    public float xVelocity;
     public Rigidbody2D RB;
     public bool isGrounded;
-    public bool lastHitWall;
     public Animator Anim;
     public Transform Player;
     public float scale, X, Y;
@@ -19,6 +15,7 @@ public class CollisionMotion : MonoBehaviour
     public const float Dmass = 8.0f, Rmass = 2.0f, NDmass = -8.0f, NRmass = -2.0f;
     public bool var = false;
     public GameObject player;
+    public GameObject rotation_point;
 
 
     // Start is called before the first frame update
@@ -29,6 +26,7 @@ public class CollisionMotion : MonoBehaviour
         Rdirection = true;
         Time.timeScale = 1;
         GameObject player = GameObject.FindWithTag("Player");
+        GameObject rotation_point = GameObject.FindWithTag("Point");
     } // Update is called once per frame
     void Update()
     {
@@ -57,25 +55,25 @@ public class CollisionMotion : MonoBehaviour
         //}
    
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        X = Player.transform.position.x;
-        Y = Player.transform.position.y;
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
-        {
-            isGrounded = true;
-            lastHitWall = false;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
-        { 
-            isGrounded = true;
-        }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    X = Player.transform.position.x;
+    //    Y = Player.transform.position.y;
+    //    if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
+    //    {
+    //        isGrounded = true;
+    //        lastHitWall = false;
+    //    }
+    //    else
+    //    {
+    //        isGrounded = false;
+    //    }
+    //    if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+    //    { 
+    //        isGrounded = true;
+    //    }
 
-    }
+    //}
     void faceMouse()
     {
         Vector3 mousePosition = Input.mousePosition;
@@ -84,8 +82,10 @@ public class CollisionMotion : MonoBehaviour
         Vector2 direction = new Vector2(
             mousePosition.x - transform.position.x,
             mousePosition.y - transform.position.y);
-        transform.up = direction;
 
+        transform.up = direction;
+        
     }
-    
+
 }
+    
