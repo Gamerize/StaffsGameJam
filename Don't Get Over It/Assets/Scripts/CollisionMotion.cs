@@ -5,12 +5,8 @@ using UnityEngine;
 
 public class CollisionMotion : MonoBehaviour
 {
-    public float speed;
-    public float jumpForce;
-    public float xVelocity;
     public Rigidbody2D RB;
     public bool isGrounded;
-    public bool lastHitWall;
     public Animator Anim;
     public Transform Player;
     public float scale, X, Y;
@@ -19,7 +15,11 @@ public class CollisionMotion : MonoBehaviour
     public const float Dmass = 8.0f, Rmass = 2.0f, NDmass = -8.0f, NRmass = -2.0f;
     public bool var = false;
     public GameObject player;
+    public GameObject tool;
 
+    public Rigidbody2D selectedObject;
+    Vector3 offset;
+    Vector3 mousePosition;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,7 @@ public class CollisionMotion : MonoBehaviour
         Rdirection = true;
         Time.timeScale = 1;
         GameObject player = GameObject.FindWithTag("Player");
+        GameObject tool = GameObject.FindWithTag("Tool");
     } // Update is called once per frame
     void Update()
     {
@@ -55,7 +56,7 @@ public class CollisionMotion : MonoBehaviour
         //{
         //    RB.gravityScale = NRmass;
         //}
-   
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -63,19 +64,21 @@ public class CollisionMotion : MonoBehaviour
         Y = Player.transform.position.y;
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
         {
-            isGrounded = true;
-            lastHitWall = false;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
-        { 
-            isGrounded = true;
-        }
+           Vector2 direction = new Vector2(1,1);
+           RB.AddForce(direction * 100);
 
+        }
     }
+    //    else
+    //    {
+    //        isGrounded = false;
+    //    }
+    //    if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+    //    { 
+    //        isGrounded = true;
+    //    }
+
+    //}
     void faceMouse()
     {
         Vector3 mousePosition = Input.mousePosition;
@@ -84,8 +87,42 @@ public class CollisionMotion : MonoBehaviour
         Vector2 direction = new Vector2(
             mousePosition.x - transform.position.x,
             mousePosition.y - transform.position.y);
+
         transform.up = direction;
 
+       
+        
     }
-    
+    void FixedUpdate()
+    {
+
+        //if (tool.rotation.z > 180)
+        //    tool.rotation.z = -180;
+        //else if (tool.rotation.z < -180)
+        //    tool.rotation.z = 180;
+
+        //if (tool.rotation.z > 0)
+        //{
+        //    tool.flipx = true;
+        //}
+        //else
+        //{
+        //    tool.flipx = false;
+        //}
+        //if (selectedObject)
+        //{
+        //    offset = selectedObject.transform.position - mousePosition;
+        //    selectedObject.MovePosition(mousePosition + offset);
+        //}
+        //Vector2 offset = new Vector2(mousePosition.x - transform.position.x,
+        //  mousePosition.y - transform.position.y);
+        //transform.Translate(transform.up * Time.deltaTime);
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane;
+        Vector3 Worldpos = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector2 Worldpos2D = new Vector2(Worldpos.x, Worldpos.y);
+        transform.up = Worldpos;
+    }
+
 }
+    
