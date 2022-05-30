@@ -17,6 +17,9 @@ public class CollisionMotion : MonoBehaviour
     public GameObject player;
     public GameObject rotation_point;
 
+    public Rigidbody2D selectedObject;
+    Vector3 offset;
+    Vector3 mousePosition;
 
     // Start is called before the first frame update
     void Start()
@@ -53,17 +56,18 @@ public class CollisionMotion : MonoBehaviour
         //{
         //    RB.gravityScale = NRmass;
         //}
-   
+
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    X = Player.transform.position.x;
-    //    Y = Player.transform.position.y;
-    //    if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
-    //    {
-    //        isGrounded = true;
-    //        lastHitWall = false;
-    //    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        X = Player.transform.position.x;
+        Y = Player.transform.position.y;
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
+        {
+            isGrounded = true;
+
+        }
+    }
     //    else
     //    {
     //        isGrounded = false;
@@ -84,7 +88,22 @@ public class CollisionMotion : MonoBehaviour
             mousePosition.y - transform.position.y);
 
         transform.up = direction;
-        
+
+        //    //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //    //    Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
+        //    //    if (targetObject)
+        //    //    {
+        //    //        selectedObject = targetObject.transform.gameObject.GetComponent<Rigidbody2D>();
+        //    //        offset = selectedObject.transform.position - mousePosition;
+        //    //    }
+    }
+        void FixedUpdate()
+    {
+        if (selectedObject)
+        {
+            offset = selectedObject.transform.position - mousePosition;
+            selectedObject.MovePosition(mousePosition + offset);
+        }
     }
 
 }
