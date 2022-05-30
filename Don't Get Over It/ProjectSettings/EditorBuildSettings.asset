@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: dc8e9e52536638e4d8b260ae283e83af
+  - enabled: 1
+    path: Assets/Scenes/Jake.unity
+    guid: f0104c9ab8eae6d4984f50b0106a2f85
   m_configObjects: {}

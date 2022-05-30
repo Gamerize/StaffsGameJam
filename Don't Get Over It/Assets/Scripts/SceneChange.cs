@@ -17,7 +17,7 @@ public class SceneChange : MonoBehaviour
 
     public void GameScene()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Jake");
     }
 
     public void DeathScene()
