@@ -8,6 +8,8 @@ public class SceneChange : MonoBehaviour
     public void TitleScene()
     {
         SceneManager.LoadScene("Title");
+        FindObjectOfType<AudioManager>().playAudio("Title Theme");
+        FindObjectOfType<AudioManager>().stopAudio("Main Theme");
     }
 
     public void PauseScene()
@@ -18,6 +20,8 @@ public class SceneChange : MonoBehaviour
     public void GameScene()
     {
         SceneManager.LoadScene("Jake");
+        FindObjectOfType<AudioManager>().playAudio("Main Theme");
+        FindObjectOfType<AudioManager>().stopAudio("Title Theme");
     }
 
     public void DeathScene()
