@@ -5,20 +5,22 @@ using UnityEngine;
 public class Sauron : MonoBehaviour
 {
     public float X;
-    public Camera CAM;
+    public Transform Tower;
     public Transform player;
+    private float TowerX;
+
     //public GameObject player = null;
     // Start is called before the first frame update
     void Start()
     {
-        CAM = GetComponent<Camera>();
+        TowerX = Tower.transform.position.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        X = player.transform.position.x;
+        X = 40.7f + player.transform.position.x;
 
-        transform.position = new Vector3(X, 0, -10);
+        Tower.transform.position = new Vector3(X, 41, 0);
     }
 }
