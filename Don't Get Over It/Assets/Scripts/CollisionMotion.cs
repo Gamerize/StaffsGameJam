@@ -6,14 +6,10 @@ using UnityEngine;
 public class CollisionMotion : MonoBehaviour
 {
     public Rigidbody2D RB;
-    public bool isGrounded;
-    public Animator Anim;
-    public Transform Player;
+    //public bool isGrounded;
+    //public Animator Anim;
+    public Transform Self;
     public float scale, X, Y;
-    public bool Rdirection;
-    public bool Ldirection, flipped = false;
-    public const float Dmass = 8.0f, Rmass = 2.0f, NDmass = -8.0f, NRmass = -2.0f;
-    public bool var = false;
     public GameObject player;
     public GameObject tool;
 
@@ -25,8 +21,7 @@ public class CollisionMotion : MonoBehaviour
     void Start()
     {
         //RB = GetComponent<Rigidbody2D>();
-        Anim = GetComponent<Animator>();
-        Rdirection = true;
+        //Anim = GetComponent<Animator>();
         Time.timeScale = 1;
         GameObject player = GameObject.FindWithTag("Player");
         GameObject tool = GameObject.FindWithTag("Tool");
@@ -60,13 +55,13 @@ public class CollisionMotion : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        X = Player.transform.position.x;
-        Y = Player.transform.position.y;
+        X = Self.transform.position.x;
+        Y = Self.transform.position.y;
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
         {
-            Debug.Log(" deez");
-           Vector2 direction = new Vector2(-Player.transform.position.x, 0);
-           RB.AddForce(direction * 100);
+           // Debug.Log(" deez");
+           //Vector2 direction = new Vector2(-Self.transform.position.x, 0);
+           //RB.AddForce(direction * 100);
 
         }
 
@@ -101,10 +96,10 @@ public class CollisionMotion : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         Vector2 direction = new Vector2(
-            mousePosition.x - transform.position.x,
-            mousePosition.y - transform.position.y);
+            mousePosition.x,
+            mousePosition.y);
 
-        transform.up = direction;
+        tool.transform.up = direction;
         //if (tool.rotation.z > 180)
         //    tool.rotation.z = -180;
         //else if (tool.rotation.z < -180)
