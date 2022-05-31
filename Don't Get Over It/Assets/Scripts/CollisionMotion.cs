@@ -24,7 +24,7 @@ public class CollisionMotion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RB = GetComponent<Rigidbody2D>();
+        //RB = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
         Rdirection = true;
         Time.timeScale = 1;
@@ -33,7 +33,7 @@ public class CollisionMotion : MonoBehaviour
     } // Update is called once per frame
     void Update()
     {
-        faceMouse();
+        //faceMouse();
         //if (isGrounded == true && Input.GetKey(KeyCode.Q))
         //{
         //    isGrounded = false;
@@ -58,16 +58,18 @@ public class CollisionMotion : MonoBehaviour
         //}
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         X = Player.transform.position.x;
         Y = Player.transform.position.y;
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Collision"))
         {
-           Vector2 direction = new Vector2(1,1);
+            Debug.Log(" deez");
+           Vector2 direction = new Vector2(-Player.transform.position.x, 0);
            RB.AddForce(direction * 100);
 
         }
+
     }
     //    else
     //    {
@@ -79,7 +81,21 @@ public class CollisionMotion : MonoBehaviour
     //    }
 
     //}
-    void faceMouse()
+    //void faceMouse()
+    //{
+    //    Vector3 mousePosition = Input.mousePosition;
+    //    mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+    //    Vector2 direction = new Vector2(
+    //        mousePosition.x - transform.position.x,
+    //        mousePosition.y - transform.position.y);
+
+    //    transform.up = direction;
+
+       
+        
+    //}
+    void FixedUpdate()
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -89,13 +105,6 @@ public class CollisionMotion : MonoBehaviour
             mousePosition.y - transform.position.y);
 
         transform.up = direction;
-
-       
-        
-    }
-    void FixedUpdate()
-    {
-
         //if (tool.rotation.z > 180)
         //    tool.rotation.z = -180;
         //else if (tool.rotation.z < -180)
@@ -117,11 +126,11 @@ public class CollisionMotion : MonoBehaviour
         //Vector2 offset = new Vector2(mousePosition.x - transform.position.x,
         //  mousePosition.y - transform.position.y);
         //transform.Translate(transform.up * Time.deltaTime);
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane;
-        Vector3 Worldpos = Camera.main.ScreenToWorldPoint(mousePos);
-        Vector2 Worldpos2D = new Vector2(Worldpos.x, Worldpos.y);
-        transform.up = Worldpos;
+        //Vector3 mousePos = Input.mousePosition;
+        //mousePos.z = Camera.main.nearClipPlane;
+        //Vector3 Worldpos = Camera.main.ScreenToWorldPoint(mousePos);
+        //Vector2 Worldpos2D = new Vector2(Worldpos.x, Worldpos.y);
+        //transform.up = Worldpos;
     }
 
 }

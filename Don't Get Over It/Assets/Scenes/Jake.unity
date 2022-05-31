@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 10769726}
   - component: {fileID: 10769727}
   - component: {fileID: 10769728}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,7 +1950,7 @@ GameObject:
   - component: {fileID: 35714095}
   - component: {fileID: 35714096}
   - component: {fileID: 35714097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3132,7 +3132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 74734402}
   - component: {fileID: 74734403}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7199,7 +7199,7 @@ GameObject:
   - component: {fileID: 200444811}
   - component: {fileID: 200444812}
   - component: {fileID: 200444813}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8043,7 +8043,7 @@ GameObject:
   - component: {fileID: 228426974}
   - component: {fileID: 228426975}
   - component: {fileID: 228426976}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8917,7 +8917,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 261407219}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -9055,7 +9055,6 @@ GameObject:
   - component: {fileID: 272326741}
   - component: {fileID: 272326744}
   - component: {fileID: 272326743}
-  - component: {fileID: 272326745}
   - component: {fileID: 272326742}
   m_Layer: 0
   m_Name: Character
@@ -9072,8 +9071,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272326740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.93, y: 1.57, z: 2.5567954}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.5567954}
+  m_LocalScale: {x: 0.09102703, y: 0.09102703, z: 0.9102703}
   m_Children:
   - {fileID: 2141213899}
   m_Father: {fileID: 1964077498}
@@ -9106,18 +9105,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 21.6, y: 21.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10, y: 7}
   m_EdgeRadius: 0
 --- !u!212 &272326744
 SpriteRenderer:
@@ -9160,8 +9159,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.6084906, b: 0.6084906, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 07bf4c4d6037de047841da45436e513e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9171,27 +9170,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &272326745
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272326740}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0.5
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &273809139
 GameObject:
   m_ObjectHideFlags: 0
@@ -11845,7 +11823,7 @@ GameObject:
   - component: {fileID: 362507019}
   - component: {fileID: 362507020}
   - component: {fileID: 362507021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13935,7 +13913,7 @@ GameObject:
   - component: {fileID: 432000225}
   - component: {fileID: 432000226}
   - component: {fileID: 432000227}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14134,7 +14112,7 @@ MonoBehaviour:
   X: 0
   Y: 0
   CAM: {fileID: 432707332}
-  player: {fileID: 0}
+  player: {fileID: 272326741}
   yValue: 0
 --- !u!1 &435374646
 GameObject:
@@ -15797,7 +15775,7 @@ GameObject:
   - component: {fileID: 499973921}
   - component: {fileID: 499973922}
   - component: {fileID: 499973923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16566,7 +16544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515897808}
   - component: {fileID: 515897809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16760,7 +16738,7 @@ GameObject:
   - component: {fileID: 520289978}
   - component: {fileID: 520289979}
   - component: {fileID: 520289980}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16980,7 +16958,7 @@ GameObject:
   - component: {fileID: 525299162}
   - component: {fileID: 525299163}
   - component: {fileID: 525299164}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17062,7 +17040,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 525299161}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -17420,7 +17398,7 @@ GameObject:
   - component: {fileID: 544546307}
   - component: {fileID: 544546308}
   - component: {fileID: 544546309}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17751,7 +17729,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556265189}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -20446,7 +20424,7 @@ GameObject:
   - component: {fileID: 625205787}
   - component: {fileID: 625205788}
   - component: {fileID: 625205789}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21876,7 +21854,7 @@ GameObject:
   - component: {fileID: 667945396}
   - component: {fileID: 667945397}
   - component: {fileID: 667945398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21958,7 +21936,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 667945395}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -23306,7 +23284,7 @@ GameObject:
   - component: {fileID: 704172089}
   - component: {fileID: 704172090}
   - component: {fileID: 704172091}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23525,7 +23503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705498272}
   - component: {fileID: 705498271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24351,7 +24329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 745451264}
   - component: {fileID: 745451265}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stone7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25537,7 +25515,7 @@ GameObject:
   - component: {fileID: 783251955}
   - component: {fileID: 783251956}
   - component: {fileID: 783251957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26280,7 +26258,7 @@ GameObject:
   - component: {fileID: 821972351}
   - component: {fileID: 821972352}
   - component: {fileID: 821972353}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26500,7 +26478,7 @@ GameObject:
   - component: {fileID: 824410090}
   - component: {fileID: 824410091}
   - component: {fileID: 824410092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26720,7 +26698,7 @@ GameObject:
   - component: {fileID: 834378991}
   - component: {fileID: 834378992}
   - component: {fileID: 834378993}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26802,7 +26780,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 834378990}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -28123,7 +28101,7 @@ GameObject:
   - component: {fileID: 866250685}
   - component: {fileID: 866250686}
   - component: {fileID: 866250687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28205,7 +28183,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 866250684}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -28506,7 +28484,7 @@ GameObject:
   - component: {fileID: 876191359}
   - component: {fileID: 876191360}
   - component: {fileID: 876191361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30266,7 +30244,7 @@ GameObject:
   - component: {fileID: 913987716}
   - component: {fileID: 913987717}
   - component: {fileID: 913987718}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31476,7 +31454,7 @@ GameObject:
   - component: {fileID: 959258395}
   - component: {fileID: 959258396}
   - component: {fileID: 959258397}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31558,7 +31536,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 959258394}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -31696,7 +31674,7 @@ GameObject:
   - component: {fileID: 960908096}
   - component: {fileID: 960908097}
   - component: {fileID: 960908098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34462,7 +34440,7 @@ GameObject:
   - component: {fileID: 1041718577}
   - component: {fileID: 1041718578}
   - component: {fileID: 1041718579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34792,7 +34770,7 @@ GameObject:
   - component: {fileID: 1051403079}
   - component: {fileID: 1051403080}
   m_Layer: 0
-  m_Name: 785eb152-8973-413d-8904-95bb46aa04f7
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35093,7 +35071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1066538809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Deaths Drop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36880,7 +36858,7 @@ GameObject:
   - component: {fileID: 1129339032}
   - component: {fileID: 1129339033}
   - component: {fileID: 1129339034}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39453,7 +39431,7 @@ GameObject:
   - component: {fileID: 1181778143}
   - component: {fileID: 1181778144}
   - component: {fileID: 1181778145}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39535,7 +39513,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1181778142}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -41269,7 +41247,7 @@ GameObject:
   - component: {fileID: 1239962298}
   - component: {fileID: 1239962299}
   - component: {fileID: 1239962300}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41351,7 +41329,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1239962297}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -41818,7 +41796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247425960}
   - component: {fileID: 1247425961}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LavaRock4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41901,7 +41879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249712800}
   - component: {fileID: 1249712799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stone11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42717,7 +42695,7 @@ GameObject:
   - component: {fileID: 1264710507}
   - component: {fileID: 1264710508}
   - component: {fileID: 1264710509}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42799,7 +42777,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1264710506}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -43267,7 +43245,7 @@ GameObject:
   - component: {fileID: 1275322369}
   - component: {fileID: 1275322370}
   - component: {fileID: 1275322371}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45386,7 +45364,7 @@ GameObject:
   - component: {fileID: 1332821222}
   - component: {fileID: 1332821223}
   - component: {fileID: 1332821224}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45468,7 +45446,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1332821221}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -47118,7 +47096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368607890}
   - component: {fileID: 1368607889}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stone7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47202,7 +47180,7 @@ GameObject:
   - component: {fileID: 1370658311}
   - component: {fileID: 1370658312}
   - component: {fileID: 1370658313}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48165,7 +48143,7 @@ GameObject:
   - component: {fileID: 1396609929}
   - component: {fileID: 1396609930}
   - component: {fileID: 1396609931}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50888,7 +50866,7 @@ GameObject:
   - component: {fileID: 1491422653}
   - component: {fileID: 1491422654}
   - component: {fileID: 1491422655}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50970,7 +50948,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1491422652}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -53061,7 +53039,7 @@ GameObject:
   - component: {fileID: 1545345080}
   - component: {fileID: 1545345081}
   - component: {fileID: 1545345082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53941,7 +53919,7 @@ GameObject:
   - component: {fileID: 1609753799}
   - component: {fileID: 1609753800}
   - component: {fileID: 1609753801}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54023,7 +54001,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1609753798}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -56086,7 +56064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668934651}
   - component: {fileID: 1668934650}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56500,7 +56478,7 @@ GameObject:
   - component: {fileID: 1678807967}
   - component: {fileID: 1678807968}
   - component: {fileID: 1678807969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57665,7 +57643,7 @@ GameObject:
   - component: {fileID: 1724891788}
   - component: {fileID: 1724891789}
   - component: {fileID: 1724891790}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63214,7 +63192,7 @@ GameObject:
   - component: {fileID: 1756211557}
   - component: {fileID: 1756211558}
   - component: {fileID: 1756211559}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67726,7 +67704,7 @@ GameObject:
   - component: {fileID: 1890855294}
   - component: {fileID: 1890855295}
   - component: {fileID: 1890855296}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69046,6 +69024,7 @@ GameObject:
   - component: {fileID: 1964077498}
   - component: {fileID: 1964077497}
   - component: {fileID: 1964077496}
+  - component: {fileID: 1964077499}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -69065,7 +69044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293ce44e1f5ed864688803e3c1c4c212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RB: {fileID: 272326745}
+  RB: {fileID: 0}
   isGrounded: 0
   Anim: {fileID: 0}
   Player: {fileID: 2141213899}
@@ -69078,7 +69057,7 @@ MonoBehaviour:
   var: 0
   player: {fileID: 1964077495}
   tool: {fileID: 2141213894}
-  selectedObject: {fileID: 272326745}
+  selectedObject: {fileID: 0}
 --- !u!114 &1964077497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69101,13 +69080,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964077495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6353333, y: -1.0676417, z: -2.5567954}
+  m_LocalPosition: {x: 2.56, y: 0.06, z: -2.5567954}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 272326741}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1964077499
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964077495}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1974831493
 GameObject:
   m_ObjectHideFlags: 0
@@ -69558,7 +69558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995067151}
   - component: {fileID: 1995067150}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: stone9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70590,7 +70590,7 @@ GameObject:
   - component: {fileID: 2034413028}
   - component: {fileID: 2034413029}
   - component: {fileID: 2034413030}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70672,7 +70672,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2034413027}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -71360,7 +71360,7 @@ GameObject:
   - component: {fileID: 2062291879}
   - component: {fileID: 2062291880}
   - component: {fileID: 2062291881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71442,7 +71442,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2062291878}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4e7eed17726c53440930297074320d42, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -72624,7 +72624,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095305996}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -74339,7 +74339,6 @@ GameObject:
   - component: {fileID: 2141213899}
   - component: {fileID: 2141213898}
   - component: {fileID: 2141213897}
-  - component: {fileID: 2141213896}
   - component: {fileID: 2141213895}
   m_Layer: 0
   m_Name: Hoe
@@ -74357,11 +74356,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 2141213894}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 741dba60b01235f4a9e553d1cb108161, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1, y: 7.5}
+  m_Offset: {x: 0.6, y: 7.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.04158477}
@@ -74372,33 +74371,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1}
-  m_EdgeRadius: 0
---- !u!61 &2141213896
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141213894}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 4}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.04158477}
-    oldSize: {x: 5.73, y: 8.78}
-    newSize: {x: 5.73, y: 8.78}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 8}
+  m_Size: {x: 2.2, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2141213897
 MonoBehaviour:
@@ -74412,8 +74385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293ce44e1f5ed864688803e3c1c4c212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RB: {fileID: 272326745}
-  isGrounded: 0
+  RB: {fileID: 1964077499}
+  isGrounded: 1
   Anim: {fileID: 0}
   Player: {fileID: 2141213899}
   scale: 1
@@ -74425,7 +74398,7 @@ MonoBehaviour:
   var: 0
   player: {fileID: 2141213894}
   tool: {fileID: 2141213894}
-  selectedObject: {fileID: 272326745}
+  selectedObject: {fileID: 1964077499}
 --- !u!212 &2141213898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -74486,8 +74459,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141213894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.005, y: -0.083, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.4482}
+  m_LocalPosition: {x: -0.5492869, y: 2.3070068, z: 0}
+  m_LocalScale: {x: 2.1971498, y: 2.1971498, z: 0.49238133}
   m_Children:
   - {fileID: 1752089120}
   m_Father: {fileID: 272326741}
